@@ -1,12 +1,2 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-body {
-@apply bg-gradient-to-br from-[#1e293b] to-[#0f172a] min-h-screen flex justify-center p-6;
-font-family: 'Inter', sans-serif;
-}
-

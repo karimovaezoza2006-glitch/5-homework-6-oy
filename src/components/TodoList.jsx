@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import TodoItem from "./TodoItem";
-import { Box, Button, ButtonGroup } from "@mui/material";
+import { Box, Button, ButtonGroup, Typography } from "@mui/material";
 
 export default function TodoList() {
   const todos = useSelector((state) => state.todos);
@@ -52,7 +52,9 @@ export default function TodoList() {
           Vazifa topilmadi
         </Typography>
       ) : (
-        filteredTodos.map((todo) => <TodoItem key={todo.id} todo={todo} />)
+        filteredTodos.map((todo) => (
+          <TodoItem key={todo.id} todo={todo} />
+        ))
       )}
     </Box>
   );
